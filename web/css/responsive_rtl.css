@@ -383,7 +383,7 @@
 		border: none;
 		position: absolute;
 		top: -55px;
-        right: 0;
+        right: 200px;
 		z-index: 99999;
 	}
 
@@ -747,7 +747,7 @@
 		border: none;
 		position: absolute;
 		top: -55px;
-		right: 0;
+		right: 100px;
 		z-index: 99999;
 	}
 
