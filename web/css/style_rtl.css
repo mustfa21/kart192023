@@ -2766,7 +2766,10 @@ p.privacy {
 	padding-bottom: 10px;
     display: flex !important;
 }
+.project-info p {
+    display: flex !important;
 
+}
 .project-info p b {
 	color: #222;
         display: flex;
