@@ -1,5 +1,12 @@
 @extends('web.layouts.master')
-
+<style>
+    .project-info p {
+	margin: 25px 0;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 10px;
+    display: flex !important;
+}
+</style>
 @php
     $header = \App\Models\Header::header('portfolios');
 @endphp
@@ -60,7 +67,7 @@
         </div>
     </div>
     @endif
-    
+
 
     @if(isset($portfolio))
  	<!-- Single Portfolio -->
@@ -91,8 +98,8 @@
  								<p><b>{{ __('common.owner') }}:</b><span>{{ $portfolio->client }}</span></p>
  								<p><b>{{ __('common.category') }}:</b><span>
                                     @foreach($portfolio->categories as $key => $category)
-                                        @if($key != 0),@endif {{ $category->title }} 
-                                    @endforeach                       
+                                        @if($key != 0),@endif {{ $category->title }}
+                                    @endforeach
                                 </span></p>
  								<p><b>{{ __('common.address') }}:</b><span>{{ $portfolio->address }}</span></p>
  							</div>
