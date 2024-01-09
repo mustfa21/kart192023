@@ -2725,6 +2725,8 @@ p.privacy {
 	margin: 25px 0;
 	border-bottom: 1px solid #ddd;
 	padding-bottom: 10px;
+    display: flex;
+
 }
 
 .project-info p b {
