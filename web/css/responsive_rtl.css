@@ -707,7 +707,7 @@
 
 /* Wide Mobile Layout: 480px. */
 
-@media only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 100px) and (max-width: 767px) {
 
 
 	.section-title h2 {
