@@ -740,20 +740,20 @@ textarea:focus::-webkit-input-placeholder {
 }
 
 .main-menu .navbar {
-	margin-right: 100px;
+	margin-right: 200px;
 }
 
 .main-menu li.nav-item {
 	position: relative;
-	margin-right: 30px;
+	margin-right: 10px;
 }
 
 .main-menu li.nav-item:last-child {
-    margin-right: 30px;
+    margin-right: 10px;
 
 }
 .ai{
-    margin-right: 30px !important;
+    margin-right: 10px !important;
 
 }
 
@@ -2764,6 +2764,7 @@ p.privacy {
 	margin: 25px 0;
 	border-bottom: 1px solid #ddd;
 	padding-bottom: 10px;
+    display: flex;
 }
 
 .project-info p b {
