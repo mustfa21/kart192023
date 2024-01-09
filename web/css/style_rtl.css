@@ -2769,10 +2769,11 @@ p.privacy {
 
 .project-info p b {
 	color: #222;
+        display: flex;
 }
 
 .project-info span {
-	float: right;
+	float: left;
 }
 
 .project-info .main-btn {
