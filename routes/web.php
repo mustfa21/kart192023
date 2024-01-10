@@ -124,6 +124,7 @@ Route::middleware(['auth:web', 'XSS'])->name('admin.')->namespace('Admin')->pref
     Route::resource('certificate', 'CertificateController');
 
     Route::resource('slider', 'SliderController');
+    Route::resource('user', 'UserController');
 
 
     // Client Routes
