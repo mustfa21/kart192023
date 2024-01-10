@@ -29,7 +29,7 @@ class UserEmail extends Mailable
     public function build()
     {
         return $this->subject('Mail from khalid-art.com')
-                    ->view('emails.Contact');
+                    ->view('emails.contact');
     }
     /**
      * Get the message envelope.
