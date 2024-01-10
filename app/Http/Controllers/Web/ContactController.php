@@ -72,10 +72,18 @@ class ContactController extends Controller
 
 
             $users = User::where("department", $request->department)->get();
+            $name = $request->name;
+            $email = $request->email;
+            $phone = $request->phone;
 
+            // Mail Information
+            $subject = $request->subject;
+            $from = $request->email;
+            $sender = $request->name;
+            $message = $request->message;
 
             foreach ($users as $key => $user) {
-                Mail::to($user->email)->send(new UserEmail($data));
+                Mail::to($user->email)->send(new UserEmail($name,$email,$phone,$subject,$from,$message));
             }
             Session::flash('success', __('email.send_successfully'));
         }

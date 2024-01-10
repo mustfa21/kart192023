@@ -5,8 +5,8 @@
 </head>
 <body>
 
-    <h1>Hi, {{ $user->name }}</h1>
-    <p>{{ $user->email }}</p>
+    <h1>Hi, {{ $name }}</h1>
+    <p>{{  $name }}</p>
 
     <p>Thank you</p>
 </body>

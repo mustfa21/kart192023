@@ -12,16 +12,29 @@ use Illuminate\Queue\SerializesModels;
 class UserEmail extends Mailable
 {
     use Queueable, SerializesModels;
-    public $user;
+     public $name;
+     public $email;
+     public $phone;
+     public $subject;
+     public $from;
+     public $message;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($user)
+    public function __construct($name,$email,$phone,$subject,$from,$message)
     {
-        $this->user = $user;
+        $this->name = $name;
+        $this->email = $email;
+        $this->phone = $phone;
+        $this->subject = $subject;
+        $this->from = $from;
+        $this->message = $message;
+
+
+
     }
 
 
@@ -29,7 +42,7 @@ class UserEmail extends Mailable
     public function build()
     {
         return $this->subject('Mail from khalid-art.com')
-                    ->view('emails.contact');
+                    ->view('emails.userEmail');
     }
     /**
      * Get the message envelope.
