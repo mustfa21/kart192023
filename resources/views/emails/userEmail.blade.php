@@ -5,8 +5,12 @@
 </head>
 <body>
 
-    <h1>Hi, {{ $data['name'] }}</h1>
-    <p>{{  $data['name'] }}</p>
+    <h1> {{ $data['subject'] }}</h1>
+    <p>name:{{  $data['name'] }}</p>
+    <p>email:{{  $data['email'] }}</p>
+    <p>message:{{  $data['message'] }}</p>
+
+
 
     <p>Thank you</p>
 </body>
