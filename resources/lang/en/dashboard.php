@@ -61,6 +61,11 @@ return array (
   'module_slider' => 'Slider|Sliders',
   'module_partner' => 'Partner|Partners',
   "module_certificate" => "certificate",
+  "module_user" => "User",
+  "dep" => "Department",
+  "password" =>"password ",
+
+
 
   'module_testimonial' => 'Testimonial|Testimonials',
   'module_work_process' => 'Work Process|Work Processes',

@@ -137,7 +137,12 @@
                 <span> {{ trans_choice('dashboard.module_email', 2) }} </span>
             </a>
         </li>
-
+        <li>
+            <a href="{{ route('admin.user.index') }}">
+                <span class="icon"><i class="fas fa-user"></i></span>
+                <span> {{ trans_choice('dashboard.module_user', 2) }} </span>
+            </a>
+        </li>
         <li>
             <a href="{{ route('admin.subscriber.index') }}">
                 <span class="icon"><i class="fas fa-mail-bulk"></i></span>

@@ -70,6 +70,11 @@ return array (
     "module_language" => "اللغة|اللغات",
     "module_translation" => "ترجمة|ترجمات",
     "module_certificate" => "الشهايد",
+    "dep" => "القسم",
+    "password " =>"كلمة المرور",
+
+    "module_user" => "المستخدمين",
+
 
     "module_template" => "قالب البريد الإلكتروني|قوالب البريد الإلكتروني",
     "module_live_chat" => "الدردشة الحية|الدردشات الحية",

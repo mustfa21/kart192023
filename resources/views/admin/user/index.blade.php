@@ -40,7 +40,6 @@
                                 <th>{{ __('dashboard.no') }}</th>
                                 <th>{{ __('dashboard.name') }}</th>
                                 <th>{{ __('dashboard.dep') }}</th>
-                                    <th>{{ __('dashboard.action') }}</th>
                             </tr>
                         </thead>
                         <tbody>

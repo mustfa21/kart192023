@@ -811,7 +811,7 @@ textarea:focus::-webkit-input-placeholder {
 }
 
 .main-menu .navbar {
-	margin-right: 200px;
+	margin-right: 0;
 }
 
 .main-menu li.nav-item {
