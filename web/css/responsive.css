@@ -420,7 +420,7 @@
 		top: -7px;
 		left: 0;
 		width: 100%;
-		background-color: #252531;
+		background-color: #ffff;
 		z-index: 999;
 		padding: 10px 16px;
 		-webkit-box-shadow: 0 26px 48px 0 rgba(0, 0, 0, 0.15);
@@ -784,7 +784,7 @@
 		top: -7px;
 		left: 0;
 		width: 100%;
-		background-color: #252531;
+		background-color: #ffffff;
 		z-index: 999;
 		padding: 10px 16px;
 		-webkit-box-shadow: 0 26px 48px 0 rgba(0, 0, 0, 0.15);
@@ -1026,7 +1026,7 @@
 	}
 
 	.intro-inner {
-		border: 1px solid #eee;
+		border: 1px solid #eee; 
 	}
 
 	#about-3 .about-bg {
