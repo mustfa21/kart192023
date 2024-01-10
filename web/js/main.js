@@ -7,22 +7,22 @@
 
 /* [Table of Contents]
 
-* 01. Mobile Menu 
+* 01. Mobile Menu
 
   02. Owl Caserol
         - Hero Area Slider
         - Testimonial Slider
         - Testimonial Slider#2
-		- Service Slider 
+		- Service Slider
 		- Portfolio Slider
-  03. Isotope 
-  04. Counter Up 
-  05. Wow Animation 
-  06. Sticky Area 
+  03. Isotope
+  04. Counter Up
+  05. Wow Animation
+  06. Sticky Area
   07. Scroll to the Top
   08. Active & Remove Class
   09. Menu Active Color
-  10. Preloader 
+  10. Preloader
 
 */
 
@@ -180,7 +180,7 @@
 		},
 	});
 
-	// Service Slider    
+	// Service Slider
 	$(".service-slider").owlCarousel({
 		loop: true,
 		items: 1,
@@ -292,7 +292,33 @@
 		},
 	});
 
-
+// Owlcarousel
+$(document).ready(function(){
+    $(".owl-carousel1").owlCarousel({
+        loop:true,
+      margin:10,
+      nav:true,
+      autoplay:true,
+      autoplayTimeout:3000,
+      autoplayHoverPause:true,
+      center: true,
+      navText: [
+          "<i class='fa fa-angle-left'></i>",
+          "<i class='fa fa-angle-right'></i>"
+      ],
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:1
+          },
+          1000:{
+              items:3
+          }
+      }
+    });
+  });
 	//Isotope Filter
 
 	$(".port-menu li").on("click", function () {
@@ -316,12 +342,12 @@
 
 	});
 
-	//Wow Animation  
+	//Wow Animation
 	new WOW().init(
 
 	);
 
-	//Sticky Area 
+	//Sticky Area
 	$('.sticky-area').sticky({
 		topSpacing: 0,
 	});
@@ -348,7 +374,7 @@
 	});
 
 
-	// Active & Remove Class 
+	// Active & Remove Class
 
 	$(".single-price-item").on("mouseover", function () {
 		$(".single-price-item").removeClass("active");
@@ -356,7 +382,7 @@
 	});
 
 
-	// Menu Active Color 
+	// Menu Active Color
 
 	/*$(".main-menu .navbar-nav .nav-link").on("mouseover", function () {
 		$(".main-menu .navbar-nav .nav-link").removeClass("active");

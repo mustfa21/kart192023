@@ -142,7 +142,7 @@
 
                                         @foreach($departments as $department)
 
-                                        <option value="{{ $department->title  }}">{{ $department->title }}</option>
+                                        <option value="{{ $department->id  }}">{{ $department->title }}</option>
                                         @endforeach
 
 

@@ -4,11 +4,13 @@ namespace App\Http\Controllers\Web;
 
 use App\Http\Controllers\Controller;
 use App\Mail\Contact as ContactMail;
+use App\Mail\UserEmail ;
+
 use Illuminate\Http\Request;
 use App\Models\Contact;
 use App\Models\Setting;
 use App\Models\PortfolioCategory;
-
+use App\User;
 
 use Session;
 use Mail;
@@ -69,6 +71,12 @@ class ContactController extends Controller
             Mail::to($sendTo)->send(new ContactMail($data));
 
 
+            $users = User::where("department", $request->department)->get();
+
+
+            foreach ($users as $key => $user) {
+                Mail::to($user->email)->send(new UserEmail($user));
+            }
             Session::flash('success', __('email.send_successfully'));
         }
         else{

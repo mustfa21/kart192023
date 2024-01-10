@@ -357,45 +357,28 @@
          <div id="home-2"  class="homepage-slides col-md-12 d-flex justify-content-center owl-carousel">
 
             @foreach($certificates as $certificate)
-            <div class="single-slide-item" style="background-image: url({{ asset('uploads/certificate/'.$certificate->image_path) }});">
-                <div class="overlay0"></div>
-                <div class="hero-area-content">
-                    <div class="container">
-                        <div class="row justify-content-center ">
-                            <div class="col-lg-12 wow fadeInUp animated" data-wow-delay=".2s">
-                                <div class="section-title slid-rtl">
-                                    {{--  <h6 class="slid-rtl">{{ $certificate->title }}</h6>  --}}
-                                    {{--  <h1 class="slid-rtl">{!! strip_tags($certificate->description, '<br>') !!}</h1>  --}}
+
+
+                  <div class="">
+                            <div class="">
+                                <div class="slider-card1">
+                                    <div class="d-flex justify-content-center align-items-center ">
+                                        <img src="{{ asset('uploads/certificate/'.$certificate->image_path) }}" alt="" >
+                                    </div>
+
                                 </div>
 
-                                {{--  @if(isset($slider->link))
-                                <a   href="{{ $slider->link }}" target="_blank" class="main-btn slid-rtl">{{ __('common.read_more') }}</a>
-                                @endif  --}}
+
+
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
             @endforeach
 
         </div>
  		</div>
  	</div>
     @endif
-<div class="owl-carousel owl-theme">
-    <div class="item"><h4>1</h4></div>
-    <div class="item"><h4>2</h4></div>
-    <div class="item"><h4>3</h4></div>
-    <div class="item"><h4>4</h4></div>
-    <div class="item"><h4>5</h4></div>
-    <div class="item"><h4>6</h4></div>
-    <div class="item"><h4>7</h4></div>
-    <div class="item"><h4>8</h4></div>
-    <div class="item"><h4>9</h4></div>
-    <div class="item"><h4>10</h4></div>
-    <div class="item"><h4>11</h4></div>
-    <div class="item"><h4>12</h4></div>
-</div>
+
 
     @php
         $section_clients = \App\Models\Section::section('clients');
