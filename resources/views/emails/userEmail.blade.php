@@ -5,8 +5,8 @@
 </head>
 <body>
 
-    <h1>Hi, {{ $name }}</h1>
-    <p>{{  $name }}</p>
+    <h1>Hi, {{ $data['name'] }}</h1>
+    <p>{{  $data['name'] }}</p>
 
     <p>Thank you</p>
 </body>
