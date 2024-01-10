@@ -75,7 +75,7 @@ class ContactController extends Controller
 
 
             foreach ($users as $key => $user) {
-                Mail::to($user->email)->send(new UserEmail($user));
+                Mail::to($user->email)->send(new UserEmail($data));
             }
             Session::flash('success', __('email.send_successfully'));
         }
